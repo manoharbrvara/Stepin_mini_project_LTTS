@@ -54,7 +54,7 @@ Users can easily reserve or cancel their train booking by loging in to the train
 
 ## When:
 
-In 1978, due to the economy and the emergence of new types of jets, government stopped controlling fares, prices, and routes, as well as market entry. That made the airline industry a free market new players could enter while existing carriers now could set their own prices and establish new routes.Seeing the opportunities, airlines started to share CRSs with non-competing carriers, opening access to multiple airline’s inventories via a single terminal. Carriers that participated in distribution through CRS had to pay a commission to be available through the platform. Those events in the market led to the emergence of a new term: Global Distribution System or GDS.Airlines now gained over 60 percent of bookings from travel and ticket agencies.
+It can be used to reserve a ticket from any place and download e ticket from the application.
 
 ## Where:
 
