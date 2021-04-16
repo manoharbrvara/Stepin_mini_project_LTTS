@@ -38,11 +38,11 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 create: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).exe
+	./$(PROJECT_OUTPUT).out
 
 # Document the code using Doxygen
 doc:
