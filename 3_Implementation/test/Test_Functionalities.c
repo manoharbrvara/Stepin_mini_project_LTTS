@@ -1,7 +1,7 @@
 #include "unity.h"
 
 /* Modify these two lines according to the project */
-#include "Functionalities.h"
+#include "inc\Functionalities.h"
 #define PROJECT_NAME    "Train Ticket Reservation"
 
 

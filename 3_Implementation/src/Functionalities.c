@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "Functionalities.h"
+#include "F:\Stepin_mini_project_LTTS\3_Implementation\inc\Functionalities.h"
 #include <stdio.h>
 #include<conio.h>
 #include <stdlib.h>

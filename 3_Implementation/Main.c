@@ -1,7 +1,8 @@
 /**********************************************PREPROCESSORS**********************************************************/
 //Train Reservation System
 //including all libraries for now
-#include "Functionalities.h"
+#include "inc\Functionalities.h"
+
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>

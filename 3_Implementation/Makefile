@@ -6,7 +6,7 @@ BUILD = build
 
 # All source code files
 SRC = Main.c\
-src/Functionalities.c
+src/Functionalities.c\
 
 # All test source files
 TEST_SRC = src/Functionalities.c\
@@ -16,12 +16,14 @@ unity/unity.c\
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC	= -Iinc\
--Iunity\
+INC	= inc/Functionalities.h\
+unity/unity.h\
+unity/unity_internals.h\
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
 INCLUDE_LIBS = -lcunit
+
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
