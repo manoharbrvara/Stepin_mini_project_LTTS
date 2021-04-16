@@ -1,16 +1,31 @@
+/**
+ * @file Functionalities.c
+ * @author Manohar Bravara (manohar.bravara@gmail.com)
+ * @brief Train Ticket Reservation 
+ * @version 0.1
+ * @date 2021-04-15
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "Functionalities.h"
 #include <stdio.h>
 #include<conio.h>
 #include <stdlib.h>
 #include<string.h>
-
-/*******************************************GLOBAL VARIABLES**********************************************************/
-//ALl the globle variables and the composite data types will be declared here
+/**
+ * @brief GLOBAL VARIABLES // ALl the globle variables and the composite data types will be declared her
+ * 
+ */
 typedef struct{
 	char name[50];
 	int train_num;
 	int num_of_seats;
 }pd;
+/**
+ * @brief RESERVATION()
+ * 
+ */
 /*********************************************RESERVATION()*************************************************/
 
 void reservation(void)
@@ -26,6 +41,10 @@ void reservation(void)
 	printf("\nEnter Your Name:> ");
 	fflush(stdin);
 	gets(passdetails.name);
+	/**
+	 * @brief error here have to take input of the name 
+	 * 
+	 */
 	//error here have to take input of the name
 	printf("\nEnter Number of seats:> ");
 	scanf("%d",&passdetails.num_of_seats);
@@ -72,6 +91,10 @@ void reservation(void)
 	fclose(fp);
 	getch();
 }
+/**
+ * @brief VIEWDETAILS()
+ * 
+ */
 
 /*********************************************VIEWDETAILS()*************************************************/
 
@@ -81,18 +104,23 @@ void viewdetails(void)
 	printf("-----------------------------------------------------------------------------");
 	printf("\nTr.No\tName\t\t\tDestinations\t\tCharges\t\tTime\n");
 	printf("-----------------------------------------------------------------------------");
-	printf("\n1001\tRed Lines Express\tBoston to Manhattan\tRs.5000\t\t9am");
-	printf("\n1002\tRed Lines Express\tManhattan To Boston\tRs.5000\t\t12pm");
-	printf("\n1003\tLA City Express\t\tBoston To L.A\t\tRs.4500\t\t8am");
-	printf("\n1004\tLA City Express\t\tL.A To Boston\t\tRs.4500\t\t11am");
-	printf("\n1005\tIron City Express\tBoston To Chicago\tRs.4000\t\t7am");
-	printf("\n1006\tIron City Express\tChicago To Boston\tRs.4000\t\t9.30am");
-    printf("\n1007\tKeystone Express\tBoston To Washington\tRs.3500\t\t1pm");
-    printf("\n1008\tKeystone Express\tWashington To Boston\tRs.3500\t\t4pm");
-    printf("\n1009\tMeteor Express\t\tBoston To Miami\t\tRs.6000\t\t3.35pm");
-    printf("\n1009\tMeteor Express\t\tMiami To Boston\t\tRs.6000\t\t4.15pm");
+	printf("\n1001\tPalnadu Express\tGuntur to Hyderabad\tRs.500\t\t5am");
+	printf("\n1002\tGlokonda Superfast Express\tGuntur To Hyderabad\tRs.600\t\t2pm");
+	printf("\n1003\tIntercity Express\t\tGunur To Lingampally\t\tRs.550\t\t4am");
+	printf("\n1004\tGanga Kaveri Express\t\tCennai To Chhapra\t\tRs.1000\t\t11am");
+	printf("\n1005\tAmaravathi Express\tHowrah Jn To Vasco\tRs.2000\t\t7am");
+	printf("\n1006\tDeccan Express\tMumbai To Pune\tRs.500\t\t9.30am");
+    printf("\n1007\tFalaknuma Express\tHowrah To Secunderabad\tRs.3500\t\t1pm");
+    printf("\n1008\tJanmabhoomi Express\tVisakhapatnam To Lingampalli\tRs.3500\t\t4pm");
+    printf("\n1009\tKrishna Express\t\tTirupathi To Adilabad\t\tRs.1500\t\t3.35pm");
+    printf("\n1009\tLucknow Malli Express\t\tNewdelhi To Lucknow\t\tRs.2000\t\t4.15pm");
 
 }
+
+/**
+ * @brief PRINTTICKET() 
+ * 
+ */
 
 /*********************************************PRINTTICKET()*************************************************/
 
@@ -108,6 +136,11 @@ void printticket(char name[],int num_of_seats,int train_num,float charges)
 	specifictrain(train_num);
 	printf("\nCharges:\t\t%.2f",charges);
 }
+
+/**
+ * @brief SPECIFICTRAIN()
+ * 
+ */
 
 /*********************************************SPECIFICTRAIN()*************************************************/
 
@@ -176,6 +209,11 @@ void specifictrain(int train_num)
 	}
 }
 
+/**
+ * @brief CHARGE() 
+ * 
+ */
+
 /*********************************************CHARGE()*************************************************/
 
 float charge(int train_num,int num_of_seats)
@@ -222,6 +260,11 @@ float charge(int train_num,int num_of_seats)
 	}
 }
 
+/**
+ * @brief LOGIN()
+ * 
+ */
+
 /*********************************************LOGIN()*************************************************/
 
 void login()
@@ -247,13 +290,25 @@ void login()
 	    i++;
 	}
 	pword[i]='\0';
+	/**
+	 * @brief char code=pword;
+	 * 
+	 */
 	//char code=pword;
 	i=0;
+	/**
+	 * @brief scanf("%s",&pword); 
+	 * 
+	 */
 	//scanf("%s",&pword);
     if(strcmp(uname,"user")==0 && strcmp(pword,"pass")==0)
 	{
 	printf("  \n\n\n       WELCOME TO OUR SYSTEM !! YOUR LOGIN IS SUCCESSFUL");
 	printf("\n\n\n\t\t\t\tPress any key to continue...");
+	/**
+	 * @brief holds the screen 
+	 * 
+	 */
 	getch();//holds the screen
 	break;
 	}
@@ -261,6 +316,10 @@ void login()
 	{
 		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
 		a++;
+		/**
+		 * @brief holds the screen
+		 * 
+		 */
 
 		getch();//holds the screen
 		system("cls");
